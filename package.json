@@ -12,11 +12,9 @@
     "seed": "cd server && npm run seed",
     "heroku-postbuild": "cd client && npm run build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "engines": {
+    "node": "14.16.x",
+    "npm": "7.20.x"
   },
   "repository": {
     "type": "git",
@@ -30,15 +28,7 @@
   },
   "homepage": "https://github.com/jtstockard/BookSearchEngine#readme",
   "dependencies": {
-    "@apollo/client": "^3.4.7",
-    "if-env": "^1.0.4",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "if-env": "^1.0.4"
   },
   "devDependencies": {
     "concurrently": "^5.1.0"
